@@ -1,13 +1,13 @@
 import React from "react";
-import Info from "./navComponents/Info";
+// import Info from "./navComponents/Info";
 import Navbar from "./Navbar";
 
-function Dashboard() {
+function Dashboard(props) {
   return (
     <div className="bg-white rounded-lg ">
       <div className="flex justify-between mx-5 py-3 ">
         <h2>User info</h2>
-        <button>X</button>
+        <button onClick={props.fun}>X</button>
       </div>
       <hr></hr>
       <div className="flex justify-between my-5 mx-2 pb-2">

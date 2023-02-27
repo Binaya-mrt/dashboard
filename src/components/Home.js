@@ -21,14 +21,15 @@ function Home() {
       >
         Click Me
       </button>
+
       <div
         className={
           !popup
             ? "hidden"
-            : " relative top-10 z-30  max-w-2xl bg-white rounded-md mx-auto min-w-min "
+            : " flex justify-center absolute my-[3%] items-center z-10  max-w-2xl bg-white rounded-md  min-w-min "
         }
       >
-        <Dashboard ispopUp={popup} />
+        <Dashboard fun={openPopup} />
       </div>
     </div>
   );
